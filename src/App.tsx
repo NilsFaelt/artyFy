@@ -13,15 +13,15 @@ function App() {
     setToogleMenu(prevToogleMenu=> !prevToogleMenu)
     console.log(toogleMenu)
   }
-  const titleClick=()=>{
+  const closeMenu=()=>{
     setToogleMenu(true)
   }
 
 
   return (
     <div className="App">
-      <Header title="ArtyFy" titleClick={titleClick} fn={openCloseMenu}/>
-      <Menu toogleMenu={toogleMenu} />
+      <Header title="ArtyFy" titleClick={closeMenu} fn={openCloseMenu}/>
+      <Menu toogleMenu={toogleMenu} closeMenu={closeMenu} />
       <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/login' element={ <Login/>}/>
