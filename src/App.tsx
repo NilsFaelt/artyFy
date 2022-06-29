@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import Header from './components/header/Header'
 import Menu from './components/Menu/Menu'
+import { Routes, Route, Link } from 'react-router-dom'
+import Home from './components/homeScreen/Home'
+import Login from './components/login/Login'
 
 
 
@@ -16,6 +19,12 @@ function App() {
     <div className="App">
       <Header title="ArtyFy" fn={openCloseMenu}/>
       <Menu toogleMenu={toogleMenu} />
+      <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/login' element={ <Login/>}/>
+      </Routes>
+    
+   
     </div>
   )
 }
