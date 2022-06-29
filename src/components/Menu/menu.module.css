@@ -1,6 +1,9 @@
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
     width: 100vw;
     height: 0vh;
     animation:closeAni 2s forwards  ;
@@ -22,6 +25,7 @@
   text-decoration: underline  ;
   font-size: calc(24px + 2vw);
   font-family: 'Cinzel Decorative', cursive;
+  animation:closeLink 2s forwards  ;
 
 }
 .linkOpen{
@@ -61,6 +65,21 @@
     opacity: 1;
     font-size: calc(24px + 2vw);
     color: white;
+  }
+  
+  }
+@keyframes closeLink{
+  0%{
+    opacity: 1;
+    font-size: calc(24px + 2vw);
+    color: white;
+
+  }
+  
+  100%{
+    opacity: 0;
+    font-size: 0vw;
+    color: rgba(255, 255, 255, 0);
   }
   
   }
