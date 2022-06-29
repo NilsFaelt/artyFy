@@ -3,6 +3,7 @@
     flex-direction: row;
     width: 100vw;
     height: 0vh;
+    animation:closeAni 2s forwards  ;
 }
 .containerOpen{
     display: flex;
@@ -37,7 +38,7 @@
   
     0% {
         opacity: 1;
-        width: 0vw;
+        width: 100vw;
         height: 0;
       }
     
@@ -55,12 +56,32 @@
     font-size: 0vw;
     color: rgba(255, 255, 255, 0);
   }
-
+  
   100%{
     opacity: 1;
     font-size: calc(24px + 2vw);
     color: white;
   }
   
-}
+  }
+@keyframes closeAni{
+  0%{
+    opacity: 1;
+    height: 90vh;
+    width: 100vw;
+    font-size: calc(24px + 2vw);
+    color: white;
+    background-color: black;
+  }
+  
+  100%{
+    opacity: 1;
+    height: 0vh;
+    width: 100vw;
+    font-size: calc(24px + 2vw);
+    color: white;
+    background-color: black;
+  }
+  
+  }
 
