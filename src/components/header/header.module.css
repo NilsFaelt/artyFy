@@ -1,0 +1,21 @@
+.container{
+margin-top: 1vh;
+margin-bottom: 2vh;
+display: flex;
+}
+
+.title{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: calc(24px + 2vw);
+    margin-top: 2vh;
+    margin-left: 20px;
+    text-decoration: underline gold 2px;
+}
+.burger{
+    position: absolute;
+    width: calc(50px + 1vw);
+    right: 4vw;
+    top: 2.2vh;
+    color: rgb(0, 0, 0);
+   
+}
