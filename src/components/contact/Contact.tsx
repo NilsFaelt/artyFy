@@ -8,7 +8,7 @@ const Contact = () => {
         <label className={Styles.label} htmlFor=''>
           Text input
         </label>
-        <textarea name='' id='' cols='30' rows='10'></textarea>
+        <textarea className={Styles.textArea} name='' id=''></textarea>
         <label className={Styles.label} htmlFor=''>
           Mail:
         </label>

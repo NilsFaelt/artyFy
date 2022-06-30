@@ -24,6 +24,10 @@
     margin-top: 3vh;
     margin-bottom: 1vh;
 }
+.textArea{
+    width: 65vw;
+    height: 30vh;
+}
 .input{
     width: 65vw;
     margin-bottom: 3vh;
