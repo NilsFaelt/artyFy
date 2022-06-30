@@ -9,10 +9,14 @@ const Login: React.FC = () => {
     <div className={Styles.container}>
       <h2 className={Styles.title}>Login</h2>
       <form onClick={(e) => handleClick(e)} className={Styles.form}>
-        <label htmlFor=''>Username:</label>
-        <input type='text' />
-        <label htmlFor=''>Password:</label>
-        <input type='password' />
+        <label className={Styles.label} htmlFor=''>
+          Username:
+        </label>
+        <input className={Styles.input} type='text' />
+        <label className={Styles.label} htmlFor=''>
+          Password:
+        </label>
+        <input className={Styles.input} type='password' />
         <p className={Styles.createAccount}>Create account ?</p>
         <button className='btn'>Login</button>
       </form>
