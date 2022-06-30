@@ -1,10 +1,28 @@
+import { useState } from "react";
 import Styles from "./login.module.css";
 
-const Login: React.FC = () => {
+interface Users {
+  username: String;
+  password: String;
+  email: String;
+  artImage: String;
+}
+
+interface Props {
+  users: Users[];
+}
+
+const Login: React.FC<Props> = ({ users }) => {
+  const [userName, setUserName] = useState<String | Number>("");
+  const [password, setPassword] = useState<String | Number>("");
+
+  console.log(users);
+
   const handleClick = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("clicked");
   };
+
   return (
     <div className={Styles.container}>
       <h2 className={Styles.title}>Login</h2>
@@ -12,11 +30,19 @@ const Login: React.FC = () => {
         <label className={Styles.label} htmlFor=''>
           Username:
         </label>
-        <input className={Styles.input} type='text' />
+        <input
+          onChange={(e) => setUserName(e.target.value)}
+          className={Styles.input}
+          type='text'
+        />
         <label className={Styles.label} htmlFor=''>
           Password:
         </label>
-        <input className={Styles.input} type='password' />
+        <input
+          onChange={(e) => setPassword(e.target.value)}
+          className={Styles.input}
+          type='password'
+        />
         <p className={Styles.createAccount}>Create account ?</p>
         <button className='btn'>Login</button>
       </form>

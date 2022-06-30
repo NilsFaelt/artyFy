@@ -8,7 +8,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 
 function App() {
-  const [toogleMenu, setToogleMenu] = useState(false);
+  const [toogleMenu, setToogleMenu] = useState<boolean>(false);
   const openCloseMenu = () => {
     setToogleMenu((prevToogleMenu) => !prevToogleMenu);
     console.log(toogleMenu);
@@ -17,13 +17,30 @@ function App() {
     setToogleMenu(true);
   };
 
+  const [users, setUsers] = useState([
+    {
+      username: "Kilmajaro",
+      password: "lotus_55",
+      email: "Kilmajaro@gmail.com",
+      artImage:
+        "https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80",
+    },
+    {
+      username: "LowLife",
+      password: "Lavida@99",
+      email: "LowLifeo@gmail.com",
+      artImage:
+        "https://images.unsplash.com/photo-1482160549825-59d1b23cb208?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+    },
+  ]);
+
   return (
     <div className='App'>
       <Header title='ArtyFy' titleClick={closeMenu} fn={openCloseMenu} />
       <Menu toogleMenu={toogleMenu} closeMenu={closeMenu} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/login' element={<Login users={users} />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
