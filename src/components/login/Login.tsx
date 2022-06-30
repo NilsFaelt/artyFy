@@ -16,11 +16,12 @@ const Login: React.FC<Props> = ({ users }) => {
   const [userName, setUserName] = useState<String | Number>("");
   const [password, setPassword] = useState<String | Number>("");
 
-  console.log(users);
-
   const handleClick = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("clicked");
+    const user = users.find((user) => user.username === userName);
+    if (user && user.password === password) {
+      console.log(user);
+    }
   };
 
   return (

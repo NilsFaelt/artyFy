@@ -19,7 +19,7 @@ function App() {
 
   const [users, setUsers] = useState([
     {
-      username: "Kilmajaro",
+      username: "Kilmanjaro",
       password: "lotus_55",
       email: "Kilmajaro@gmail.com",
       artImage:
