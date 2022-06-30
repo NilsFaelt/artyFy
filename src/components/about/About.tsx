@@ -18,10 +18,10 @@ const About = () => {
           upload anything that promote hate in any direction. With that said i
           know that art have to invoke feelings, but im sure you know what im
           talking about.
-          <br /> <br />• We love to see you sell your art ar Artyfy, life as an
-          artist vcan be very hard as we all know. But we dont take
-          responisbility for shiping or that the deal goes thru, that is
-          entirely up to the buyer and seller.
+          <br /> <br />• We love to see you sell your art ar Artyfy, we know
+          that life as an artist can be very hard and we love to help you. But
+          we dont take responisbility for shiping or that the deal goes thru,
+          that is entirely up to the buyer and seller.
           <br /> <br />• If you sell your art thru Artfy we love to get a smal
           donation, we dont earn anything on this page, but pay for servers and
           maintenance, a donation can help us keep running this page and help us

@@ -26,7 +26,7 @@ const Menu: React.FC<Props> = ({ toogleMenu, closeMenu }) => {
       <Link
         onClick={closeMenu}
         className={toogleMenu ? Styles.link : Styles.linkOpen}
-        to={"/about"}
+        to={"/contact"}
       >
         Contact
       </Link>
