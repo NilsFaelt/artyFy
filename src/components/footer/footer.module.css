@@ -2,6 +2,7 @@
     width: 100vw;
     height: 10vh;
     margin-top:10vh ;
-    border-top: 1px solid gold;
-    background-image: url('https://images.unsplash.com/photo-1506813561347-cbbdf7b3f520?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=702&q=80');
+    border-top: 1px solid black;
+    background-image: url('https://images.unsplash.com/photo-1550053808-52a75a05955d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    background-position:center ;
 }

@@ -2,10 +2,11 @@ import { useState } from "react";
 import Styles from "./login.module.css";
 
 interface Users {
-  username?: String;
-  password?: String;
-  email?: String;
-  artImage?: String;
+  username: String;
+  password: String;
+  email: String;
+  userImg?: String;
+  upLoadedArt?: String[];
 }
 
 interface Props {
