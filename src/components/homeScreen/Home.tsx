@@ -1,9 +1,7 @@
-import Styles from './homeScreen.module.css'
+import Styles from "./homeScreen.module.css";
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  return <main className={Styles.container}></main>;
+};
 
-export default Home
+export default Home;
