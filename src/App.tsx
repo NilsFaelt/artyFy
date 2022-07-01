@@ -7,6 +7,7 @@ import Login from "./components/login/Login";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import CreateUser from "./components/login/createUser/CreateUser";
 
 function App() {
   const [toogleMenu, setToogleMenu] = useState<boolean>(true);
@@ -46,6 +47,7 @@ function App() {
         <Route path='/login' element={<Login users={users} />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/createUser' element={<CreateUser />} />
       </Routes>
       <Footer />
     </div>

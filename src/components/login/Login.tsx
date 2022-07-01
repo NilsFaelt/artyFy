@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Styles from "./login.module.css";
 
 interface Users {
@@ -45,7 +46,9 @@ const Login: React.FC<Props> = ({ users }) => {
           className={Styles.input}
           type='password'
         />
-        <p className={Styles.createAccount}>Create account ?</p>
+        <Link className={Styles.link} to={"/createUser"}>
+          <p className={Styles.createAccount}>Create account ?</p>
+        </Link>
         <button className='btn'>Login</button>
       </form>
     </div>

@@ -12,13 +12,13 @@ const About = () => {
           YOUR FAMILY, for that you have facebook and instagram. <br /> <br /> •
           Evrything thats made by you or your assembly of people is welcomed to
           be uplloaded. <br /> <br />• THIS IS NOT WELCOME HERE, personal pics,
-          like your new house, your car, your kids, your fit body, your perfect
-          life.
+          like your new house, your car, your kids, your fit body, or your
+          perfect life.
           <br /> <br />• You will get banned straight away, with no trial if you
           upload anything that promote hate in any direction. With that said i
           know that art have to invoke feelings, but im sure you know what im
           talking about.
-          <br /> <br />• We love to see you sell your art ar Artyfy, we know
+          <br /> <br />• We love to see you sell your art at Artyfy, and we know
           that life as an artist can be very hard and we love to help you. But
           we dont take responisbility for shiping or that the deal goes thru,
           that is entirely up to the buyer and seller.
