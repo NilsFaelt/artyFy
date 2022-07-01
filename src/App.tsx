@@ -6,6 +6,7 @@ import Home from "./components/homeScreen/Home";
 import Login from "./components/login/Login";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [toogleMenu, setToogleMenu] = useState<boolean>(true);
@@ -44,6 +45,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
