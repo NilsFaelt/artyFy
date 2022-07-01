@@ -8,7 +8,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 
 function App() {
-  const [toogleMenu, setToogleMenu] = useState<boolean>(false);
+  const [toogleMenu, setToogleMenu] = useState<boolean>(true);
   const openCloseMenu = () => {
     setToogleMenu((prevToogleMenu) => !prevToogleMenu);
     console.log(toogleMenu);
