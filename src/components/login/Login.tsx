@@ -1,27 +1,27 @@
 import { useState } from "react";
 import Styles from "./login.module.css";
 
-interface Users {
-  username: String;
-  password: String;
-  email: String;
-  artImage: String;
-}
+// interface Users {
+//   username: String;
+//   password: String;
+//   email: String;
+//   artImage: String;
+// }
 
-interface Props {
-  users: Users[];
-}
+// interface Props {
+//   users: Users[];
+// }
 
-const Login: React.FC<Props> = ({ users }) => {
+const Login: React.FC = ({}) => {
   const [userName, setUserName] = useState<String | Number>("");
   const [password, setPassword] = useState<String | Number>("");
 
   const handleClick = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const user = users.find((user) => user.username === userName);
-    if (user && user.password === password) {
-      console.log(user);
-    }
+    // const user = users.find((user) => user.username === userName);
+    // if (user && user.password === password) {
+    //   console.log(user);
+    // }
   };
 
   return (
