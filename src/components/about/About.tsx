@@ -29,7 +29,7 @@ const About = () => {
         </p>
         <p className={Styles.cursivText}>
           <br /> <br />
-          Live Laugh nad create
+          Live Laugh and create
           <br /> <br /> / The Artyfy crew
         </p>
       </section>
